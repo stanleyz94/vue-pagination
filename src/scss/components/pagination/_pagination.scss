@@ -1,0 +1,90 @@
+.pagination {
+  background-color: $grey;
+
+  &__post {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    box-shadow: $box-shadow-tailwind;
+    background-color: $white;
+  }
+  &__title,
+  &__body,
+  &__name {
+    margin-bottom: 0.5rem;
+  }
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $purple;
+  }
+  &__btn {
+    width: 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background: $grey;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    @include md {
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+    }
+  }
+  &__btn:hover,
+  &__btn-active {
+    background-color: $purple;
+    color: #fff;
+  }
+  &__btn-more,
+  &__btn-delete {
+    color: $white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__btn-delete {
+    margin-top: 10px;
+    background-color: #989898;
+  }
+
+  &__btn-more {
+    background-color: $purple;
+    @include md {
+      margin-left: auto;
+    }
+  }
+
+  &__btn-more:hover,
+  &__btn-delete:hover {
+    opacity: 0.6;
+  }
+
+  &__footer {
+    background-color: $grey;
+  }
+  &__posts {
+    @include md {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+      width: 570px;
+    }
+  }
+  &__pages {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-content: center;
+  }
+}

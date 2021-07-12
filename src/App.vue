@@ -1,26 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Pagination />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Pagination from './components/Pagination.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    Pagination,
+  },
+  data() {
+    return {};
+  },
+
+  methods: {},
+  mounted() {},
+};
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss" src="./scss/main.scss"></style>
